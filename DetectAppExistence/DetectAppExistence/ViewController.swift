@@ -23,11 +23,17 @@ class ViewController: UIViewController {
     
     @IBAction func checkExistence(sender: AnyObject) {
         //specify the list of unverified url schema of application
-        CheckAppExistence.detectRelatedApplicationWithURLSchema(["fb740441725988493","myapp1","myapp2","myapp3"])
-        let message = NSString(format: "Installed app: %@\rNot installed ap:%@", CheckAppExistence.foundedArr,CheckAppExistence.notFoundedArr)
-        let alert = UIAlertController(title: "Notice", message: message as String, preferredStyle: .Alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-        self.presentViewController(alert, animated: true, completion: nil)
+        var schemas:NSArray?
+        if let path = NSBundle.mainBundle().pathForResource("schemaList", ofType: "plist") {
+            let schemas = NSArray(contentsOfFile: path) as NSArray!
+                // use swift dictionary as normal
+            let message = CheckAppExistence.detectRelatedApplicationWithURLSchema(schemas)
+            let alert = UIAlertController(title: "Notice", message: message as String, preferredStyle: .Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+        
+        
     }
 
 }

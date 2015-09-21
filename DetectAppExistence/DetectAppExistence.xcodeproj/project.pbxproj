@@ -14,6 +14,7 @@
 		2AEA99431BAACB040068B133 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AEA99411BAACB040068B133 /* LaunchScreen.xib */; };
 		2AEA994F1BAACB050068B133 /* DetectAppExistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEA994E1BAACB050068B133 /* DetectAppExistenceTests.swift */; };
 		2AEA995A1BAACBB30068B133 /* CheckAppExistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEA99591BAACBB30068B133 /* CheckAppExistence.swift */; };
+		2AF6A2A61BB0080800BF7BF4 /* schemaList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2AF6A2A51BB0080800BF7BF4 /* schemaList.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		2AEA994D1BAACB050068B133 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AEA994E1BAACB050068B133 /* DetectAppExistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectAppExistenceTests.swift; sourceTree = "<group>"; };
 		2AEA99591BAACBB30068B133 /* CheckAppExistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckAppExistence.swift; path = lib/CheckAppExistence.swift; sourceTree = "<group>"; };
+		2AF6A2A51BB0080800BF7BF4 /* schemaList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = schemaList.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		2AEA99361BAACB040068B133 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2AF6A2A51BB0080800BF7BF4 /* schemaList.plist */,
 				2AEA993C1BAACB040068B133 /* Main.storyboard */,
 				2AEA993F1BAACB040068B133 /* Images.xcassets */,
 				2AEA99411BAACB040068B133 /* LaunchScreen.xib */,
@@ -205,6 +208,7 @@
 			files = (
 				2AEA993E1BAACB040068B133 /* Main.storyboard in Resources */,
 				2AEA99431BAACB040068B133 /* LaunchScreen.xib in Resources */,
+				2AF6A2A61BB0080800BF7BF4 /* schemaList.plist in Resources */,
 				2AEA99401BAACB040068B133 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,6 +425,7 @@
 				2AEA99541BAACB050068B133 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2AEA99551BAACB050068B133 /* Build configuration list for PBXNativeTarget "DetectAppExistenceTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +434,7 @@
 				2AEA99571BAACB050068B133 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

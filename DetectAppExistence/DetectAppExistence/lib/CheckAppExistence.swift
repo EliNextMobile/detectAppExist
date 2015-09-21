@@ -18,9 +18,9 @@ class CheckAppExistence: NSObject {
     
     //// verify the list of url schema and arrange them into two sub-categories: INSTALLED AND NOT INSTALL application
     //// bundleInfos  - the input array consists of all unverified url schema of applications. This argument must not be nil
-    //// Returns nothing
+    //// Returns a string of result
     
-    static func detectRelatedApplicationWithURLSchema(bundleInfos:NSMutableArray!) {
+    static func detectRelatedApplicationWithURLSchema(bundleInfos:NSArray!) -> String {
         var url:NSURL!
         foundedArr = NSMutableArray()
         notFoundedArr = NSMutableArray()
@@ -35,5 +35,7 @@ class CheckAppExistence: NSObject {
                 notFoundedArr.addObject(bundleInfo)
             }
         }
+        let message = NSString(format: "Installed app: %@\rNot installed ap:%@", CheckAppExistence.foundedArr,CheckAppExistence.notFoundedArr)
+        return message as String
     }
 }
