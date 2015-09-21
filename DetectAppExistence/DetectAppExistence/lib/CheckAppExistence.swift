@@ -11,10 +11,10 @@ import UIKit
 class CheckAppExistence: NSObject {
     
     //// The static array containing all url schema of INSTALLED application
-    static var foundedArr = NSMutableArray()
+    static var foundedArr:NSMutableArray!
     
     //// The static array containing all url schma of NOT INSTALLED application
-    static var notFoundedArr = NSMutableArray()
+    static var notFoundedArr:NSMutableArray!
     
     //// verify the list of url schema and arrange them into two sub-categories: INSTALLED AND NOT INSTALL application
     //// bundleInfos  - the input array consists of all unverified url schema of applications. This argument must not be nil
@@ -22,7 +22,8 @@ class CheckAppExistence: NSObject {
     
     static func detectRelatedApplicationWithURLSchema(bundleInfos:NSMutableArray!) {
         var url:NSURL!
-        
+        foundedArr = NSMutableArray()
+        notFoundedArr = NSMutableArray()
         for (var i = 0;i < bundleInfos.count;++i) {
             let bundleInfo = bundleInfos.objectAtIndex(i) as! String
             url = NSURL(string: String(format: "%@://", bundleInfo))

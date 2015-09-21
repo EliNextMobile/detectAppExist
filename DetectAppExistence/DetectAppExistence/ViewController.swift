@@ -24,9 +24,10 @@ class ViewController: UIViewController {
     @IBAction func checkExistence(sender: AnyObject) {
         //specify the list of unverified url schema of application
         CheckAppExistence.detectRelatedApplicationWithURLSchema(["fb740441725988493","myapp1","myapp2","myapp3"])
-        
-        println("Installed application \(CheckAppExistence.foundedArr)")
-        println("Not installed application \(CheckAppExistence.notFoundedArr)")
+        let message = NSString(format: "Installed app: %@\rNot installed ap:%@", CheckAppExistence.foundedArr,CheckAppExistence.notFoundedArr)
+        let alert = UIAlertController(title: "Notice", message: message as String, preferredStyle: .Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
     }
 
 }
