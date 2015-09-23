@@ -1,0 +1,20 @@
+ [
+ {
+    "appName": "ES SCan",
+    "appScheme": "myapp1",
+     "imageURL": "imageURL",
+     "numOfDisplays": 0
+ },
+ {
+    "appName": "bundle1",
+    "appScheme": "myapp2",
+     "imageURL": "http://m.f29.img.vnecdn.net/2015/01/15/thu-tuong-nguyen-tan-dung-5811-1421308800.jpg",
+     "numOfDisplays": 0
+ },
+ {
+     "appName": "bundle2",
+     "appScheme": "myapp3",
+     "imageURL": "http://i.telegraph.co.uk/multimedia/archive/03171/mr_bean_edit_3171783b.jpg",
+     "numOfDisplays": 0
+ }
+]

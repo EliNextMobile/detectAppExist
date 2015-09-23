@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AE85FC61BB29FEA009B06E0 /* bundleInformation.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AE85FC51BB29FEA009B06E0 /* bundleInformation.json */; };
 		2AEA99391BAACB040068B133 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEA99381BAACB040068B133 /* AppDelegate.swift */; };
 		2AEA993B1BAACB040068B133 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEA993A1BAACB040068B133 /* ViewController.swift */; };
 		2AEA993E1BAACB040068B133 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AEA993C1BAACB040068B133 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2AE85FC51BB29FEA009B06E0 /* bundleInformation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bundleInformation.json; sourceTree = "<group>"; };
 		2AEA99331BAACB040068B133 /* DetectAppExistence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DetectAppExistence.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AEA99371BAACB040068B133 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AEA99381BAACB040068B133 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 		2AEA99361BAACB040068B133 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2AE85FC51BB29FEA009B06E0 /* bundleInformation.json */,
 				2AF6A2A51BB0080800BF7BF4 /* schemaList.plist */,
 				2AEA993C1BAACB040068B133 /* Main.storyboard */,
 				2AEA993F1BAACB040068B133 /* Images.xcassets */,
@@ -206,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AE85FC61BB29FEA009B06E0 /* bundleInformation.json in Resources */,
 				2AEA993E1BAACB040068B133 /* Main.storyboard in Resources */,
 				2AEA99431BAACB040068B133 /* LaunchScreen.xib in Resources */,
 				2AF6A2A61BB0080800BF7BF4 /* schemaList.plist in Resources */,
